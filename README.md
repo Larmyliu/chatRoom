@@ -1,6 +1,6 @@
 # chatRoom
 
-![screen](C:\Users\42012\Desktop\screen.gif)
+![screen](https://img-blog.csdnimg.cn/20200806171616300.gif)
 
 #### node+websocket
 
