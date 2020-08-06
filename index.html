@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!--the css for jquery.mCustomScrollbar-->
+    <link rel="stylesheet" href="lib/css/jquery.mCustomScrollbar.min.css"/>
+    <!--the css for this plugin-->
+    <link rel="stylesheet" href="css/jquery.emoji.css"/>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div class="login" style="display: block;">
+            <h3>请先登录</h3>
+            <div class="input-group">
+                <span class="input-group-addon" id="basic-addon1">nickName:</span>
+                <input type="text" class="form-control" placeholder="请输入你的用户名" aria-describedby="basic-addon1" id="login_name">
+                
+            </div>
+            <button id="l_btn">登录</button>
+        </div>
+        <div class="chat" style="display: none;">
+            <div class="header">
+                <div class="tit">群聊</div>
+            </div>
+            <div class="content">
+                <!-- <div class="office">ljm加入群聊</div>
+                <div class="my">
+                    
+                    <span>hello</span>
+                    <span>user</span>
+                </div>
+                <div class="other">
+                    <span>user</span>
+                    <span>heoo</span>
+                    
+                </div> -->
+            </div>
+            <div class="footer">
+                <div id="editor" contenteditable="true" class="f_input" placeholder="请输入"></div>
+                <!-- <div class="send"> -->
+                    <button id="btn" class="s_btn"></button>
+                <!-- </div> -->
+                <button class="send">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <!--(Optional) the js for jquery.mCustomScrollbar's addon-->
+    <script src="lib/script/jquery.mousewheel-3.0.6.min.js"></script>
+    <!--the js for jquery.mCustomScrollbar-->
+    <script src="lib/script/jquery.mCustomScrollbar.min.js"></script>
+    <!--the js for this plugin-->
+    <script src="js/jquery.emoji.min.js"></script>
+    <script src="js/socket.io.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

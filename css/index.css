@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.outer .login {
+  width: 80vw;
+}
+.outer .chat {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #eee;
+}
+.outer .chat .header {
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+}
+.outer .chat .header .tit {
+  text-align: center;
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 25px;
+}
+.outer .chat .content {
+  width: 100%;
+  height: 82vh;
+  background-color: #eee;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.outer .chat .content .office {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  width: 80%;
+  height: 30px;
+  color: #ccc;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px auto;
+  text-align: center;
+}
+.outer .chat .content .my {
+  display: flex;
+  align-self: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px auto;
+}
+.outer .chat .content .my span:first-child {
+  display: inline-block;
+  background-color: greenyellow;
+  padding: 0 8px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.outer .chat .content .other {
+  display: flex;
+  align-items: flex-end;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px auto;
+}
+.outer .chat .content .other span:last-child {
+  display: inline-block;
+  background-color: #888;
+  padding: 0 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.outer .chat .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+  background-color: #ccc;
+  /*焦点时内容为空*/
+}
+.outer .chat .footer .f_input {
+  width: 60%;
+  height: 8vh;
+  background: #fff;
+  line-height: 8vh;
+  font-size: 16px;
+}
+.outer .chat .footer .f_input:empty:before {
+  content: attr(placeholder);
+  /* element attribute*/
+  /*content: 'this is content';*/
+  color: #eee;
+}
+.outer .chat .footer .f_input:focus:before {
+  content: none;
+}
+.outer .chat .footer .s_btn {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: #ccc;
+  background-image: url(../img//smile.png);
+  background-size: cover;
+}
+.outer .chat .footer .send {
+  width: 20%;
+  height: 8vh;
+  background-color: green;
+}
